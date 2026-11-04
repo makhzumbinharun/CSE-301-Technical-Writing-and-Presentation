@@ -1,0 +1,240 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{soul} % Required for Equation Strikethrough
+\usepackage{amssymb}
+\usepackage{amsmath} % Required for Equation Alignment
+\usepackage{graphicx} % Required for Image
+\title{Learning LATEX}
+\author{Makhzum - Bin - Harun}
+\date{November 2026}
+\begin{document}
+%Hello World!
+\maketitle
+
+\section{Section}
+\subsection{Subsection}
+
+This is my first LaTeX document.
+I am learning LaTeX.\\
+This is paragraph one.\\
+This is paragraph two.
+
+\section{Different Types of Text}
+\subsection{Text Style}\\
+\textbf{This text is bold.}\\
+\textit{This text is Italic.}\\
+\underline{This text is Underlined.}\\
+\st{This text is Strikethrough.}
+\subsection{Font Style}
+{\tiny Tiny}\\
+{\small Small}\\
+{\large Large}\\
+{\Large Larger}\\
+{\Huge Huge}
+
+\section{Different Types of Lists}
+\subsection{Bullet List}
+
+\begin{itemize} \item Apple \item Mango \item Orange \end{itemize}
+
+\subsubsection{Bullet List Types}
+\begin{itemize} \item[$\blacksquare$]Apple \item[$\square$]Mango \item Orange \end{itemize}
+
+\subsection{Numbered List}
+ \begin{enumerate} \item First \item Second \item Third \end{enumerate}
+
+\subsection{Description List}
+\begin{description}
+  \item[Item 1] This is Item 1.
+  \item[Item 2] This is Item 2.
+\end{description}
+
+\subsection{Nested List}
+\begin{enumerate}
+  \item Top-level ordered item
+  \begin{itemize}
+    \item Indented sub-bullet item
+    \item Another sub-bullet item
+  \end{itemize}
+  \item Second top-level ordered item
+\end{enumerate}
+
+\section{Mathematics}
+\subsection{Inline math \$...\$ or $ \(...\backslash\) $}
+The equation is $a+b=c$.
+Displayed math with slash \[a+b=c\]
+\subsubsection{Power}
+\paragraph{Superscript}
+\[x^2\]
+\paragraph{Subscript}
+$x_1$
+\subsubsection{Fraction}
+$\frac{1}{2}$
+\subsubsection{Square Root}
+$\sqrt{x}$
+\subsubsection{Summation}
+$\sum_{i=1}^{n}$
+\subsubsection{Integral}
+$\int_0^1 x dx$
+\subsection{Greek Letters}
+\subsubsection{Small Greek Letters}
+$\alpha$
+$\beta$
+$\gamma$
+$\lambda$
+$\theta$
+$\pi$
+$\sigma$
+$\omega$
+\subsubsection{Capital Greek Letters}
+$A$
+$B$
+$\Gamma$
+$\Lambda$
+$\Theta$
+$\Pi$
+$\Sigma$
+$\Omega$
+
+\subsection{Equation Environment\textbackslash{begin\{equation\}}}
+\begin{equation}
+E=mc^2 \end{equation}
+Automatically numbers equations.
+
+\subsection{Align Equations}
+\begin{align}
+a &= b+c\\
+x &= y+z
+\end{align}
+
+\section{Images}
+\includegraphics[width=0.5\textwidth]{logo (1).png}
+
+\section{Figure}
+\begin{figure}
+\centering
+\includegraphics[width=.5\textwidth]{image}
+\caption{My image}
+\label{fig:image}
+\end{figure}
+
+\section{Tables}
+\begin{tabular}{|c|c|}
+\hline
+Name & Age\\
+\hline
+John & 25\\
+\hline
+Alice & 30\\
+\hline
+\end{tabular}
+
+
+\section{References}
+Label
+\label{sec:intro}
+Reference
+See Section~\ref{sec:intro}.
+\section{Citations}
+Using BibTeX
+According to \cite{smith2023}.
+\subsection{Bibliography}
+\bibliography{references}
+\section{Packages}
+Packages add features. Examples:\\
+\textbackslash{usepackage\{amsmath\}}\\
+\textbackslash{usepackage\{graphicx\}}\\
+\textbackslash{usepackage\{booktabs\}}\\
+\textbackslash{usepackage\{hyperref\}}
+\subsection{Common packages}
+\begin{tabular}{|c|c|}
+\hline
+Package & Purpose\\
+\hline
+amsmath & Better mathematics\\
+\hline
+graphicx & Images\\
+\hline
+booktabs & Better tables\\
+\hline
+hyperref & Clickable links\\
+\hline
+xcolor & Colors\\
+\hline
+geometry & Page margins\\
+\hline
+float & Better figure placement\\
+\hline
+caption & Caption customization\\
+\hline
+\end{tabular}
+\section {Special Characters}
+Some symbols are reserved and must be escaped.
+Character Latex Write # \# $ \$ % \% & \& _ \_ { \{ } \} ^ \^{} ~ \~{} \ \textbackslash
+
+\end{document}
+
+
+
+% This is ignored
+
+
+
+19. Hyperlinks \usepackage{hyperref}
+Then \href{https://example.com}{Visit Website}
+
+20. Page Break \newpage
+21. Line Break
+Hello
+\
+\
+World
+22. Center \begin{center}
+Hello \end{center}
+23. Left and Right Alignment
+Left \begin{flushleft}
+Text \end{flushleft}
+Right \begin{flushright}
+Text \end{flushright}
+24. Common Document Structure \documentclass{article} \usepackage{amsmath} \usepackage{graphicx} \usepackage{hyperref} \title{My Paper} \author{Your Name}
+
+Page 6 of 9
+
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Introduction}
+Text...
+\section{Methods}
+Text...
+\section{Results}
+Text...
+\section{Conclusion}
+Text...
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
+25. The 20 Most Important Commands to Memorize
+Command Purpose
+\documentclass{} Document type
+\usepackage{} Load a package
+\begin{document} Start document
+\end{document} End document
+\section{} Section heading
+\subsection{} Subsection
+\textbf{} Bold
+\textit{} Italic
+\underline{} Underline
+\item List item
+\includegraphics{} Insert image
+\caption{} Figure/table caption
+\label{} Create a reference label
+\ref{} Reference a label
+\cite{} Cite a reference
+\frac{}{} Fraction
+\sqrt{} Square root
+\sum Summation
+\int Integral
+\alpha, \beta, etc. Greek letters
